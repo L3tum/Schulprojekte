@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language>
+    <patientHinzufügen></patientHinzufügen>
+    <patientAktualisieren></patientAktualisieren>
+    <felderLeeren></felderLeeren>
+    <vorwärts></vorwärts>
+    <rückwärts></rückwärts>
+    <allergieHinzufügen></allergieHinzufügen>
+    <vorname></vorname>
+    <name></name>
+    <blutgruppe></blutgruppe>
+    <hausnummer></hausnummer>
+    <straße></straße>
+    <notfallnummer></notfallnummer>
+    <ort></ort>
+    <rufnummer></rufnummer>
+    <postleitzahl></postleitzahl>
+</language>

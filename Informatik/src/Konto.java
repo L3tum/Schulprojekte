@@ -1,0 +1,38 @@
+public class Konto {
+  double haben;
+  int pass;
+  int nummer;
+  int opNummer;
+  
+  public void setPass(int pass) {
+    this.pass = pass;
+  }
+  
+  public int getPass() {
+    return pass;
+  }
+  
+  public void setHaben(double haben) {
+    this.haben = haben;
+  }
+  
+  public double getHaben() {
+    return haben;
+  }
+  
+  public void setNummer(int nummer) {
+    this.nummer = nummer;
+  }
+  
+  public int getNummer() {
+    return nummer;
+  }
+  
+  public void setOpNummer(int opNummer){
+    this.opNummer = opNummer;
+  }
+  
+  public int getOpNummer(){
+    return opNummer;
+  }
+}

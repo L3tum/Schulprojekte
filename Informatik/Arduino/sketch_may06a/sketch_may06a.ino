@@ -1,0 +1,618 @@
+#include <LedControl.h>
+
+#include "LedControl.h"
+LedControl lc=LedControl(12,11,10,1);
+unsigned long delaytime=250;
+void setup() {
+  lc.shutdown(0,false);
+  lc.setIntensity(0,6);
+  lc.clearDisplay(0);
+}
+void loop() {
+  byte x[8]={
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+};
+byte y[8]={
+   B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+  B00000000,
+};
+  byte z[8]={
+  B00000000,
+  B00000001,
+  B00000001,
+  B00000001,
+  B00000001,
+  B00000001,
+  B00000001,
+  B00000000,
+};
+  byte b[8]={
+  B00000000,
+  B00000011,
+  B00000010,
+  B00000011,
+  B00000010,
+  B00000010,
+  B00000010,
+  B00000000,
+};
+  byte c[8]={
+  B00000000,
+  B00000111,
+  B00000100,
+  B00000111,
+  B00000100,
+  B00000100,
+  B00000100,
+  B00000000,
+};
+  byte d[8]={
+  B00000000,
+  B00001111,
+  B00001001,
+  B00001111,
+  B00001001,
+  B00001001,
+  B00001001,
+  B00000000,
+};
+  byte e[8]={
+  B00000000,
+  B00011110,
+  B00010010,
+  B00011110,
+  B00010010,
+  B00010010,
+  B00010010,
+  B00000000,
+};
+  byte f[8]={
+  B00000000,
+  B00111100,
+  B00100100,
+  B00111100,
+  B00100100,
+  B00100100,
+  B00100100,
+  B00000000,
+};
+byte g[8]={
+  B00000000,
+  B01111001,
+  B01001001,
+  B01111001,
+  B01001001,
+  B01001001,
+  B01001001,
+  B00000000,
+};
+byte h[8]={
+  B00000000,
+  B11110010,
+  B10010010,
+  B11110010,
+  B10010010,
+  B10010010,
+  B10010011,
+  B00000000,
+};
+byte i[8]={
+  B00000000,
+  B11100100,
+  B00100100,
+  B11100100,
+  B00100100,
+  B00100100,
+  B00100111,
+  B00000000,
+};
+byte j[8]={
+  B00000000,
+  B11001000,
+  B01001000,
+  B11001000,
+  B01001000,
+  B01001000,
+  B01001111,
+  B00000000,
+};
+byte k[8]={
+  B00000000,
+  B10010000,
+  B10010000,
+  B10010000,
+  B10010000,
+  B10010000,
+  B10011110,
+  B00000000,
+};
+byte l[8]={
+  B00000000,
+  B00100000,
+  B00100000,
+  B00100000,
+  B00100000,
+  B00100000,
+  B00111100,
+  B00000000,
+};
+byte m[8]={
+  B00000000,
+  B01000001,
+  B01000001,
+  B01000001,
+  B01000001,
+  B01000001,
+  B01111001,
+  B00000000,
+};
+byte n[8]={
+  B00000000,
+  B10000010,
+  B10000010,
+  B10000010,
+  B10000010,
+  B10000010,
+  B11110010,
+  B00000000,
+};
+byte xa[8]={
+  B00000000,
+  B00000100,
+  B00000100,
+  B00000100,
+  B00000100,
+  B00000100,
+  B11100100,
+  B00000000,
+};
+byte xb[8]={
+  B00000000,
+  B00001001,
+  B00001001,
+  B00001001,
+  B00001001,
+  B00001001,
+  B11001001,
+  B00000000,
+};
+byte xc[8]={
+  B00000000,
+  B00010011,
+  B00010010,
+  B00010011,
+  B00010010,
+  B00010010,
+  B10010011,
+  B00000000,
+};
+byte xd[8]={
+  B00000000,
+  B00100111,
+  B00100100,
+  B00100111,
+  B00100100,
+  B00100100,
+  B00100111,
+  B00000000,
+};
+byte xe[8]={
+  B00000000,
+  B01001111,
+  B01001000,
+  B01001110,
+  B01001000,
+  B01001000,
+  B01001111,
+  B00000000,
+};
+byte xf[8]={
+  B00000000,
+  B10011110,
+  B10010000,
+  B10011100,
+  B10010000,
+  B10010000,
+  B10011110,
+  B00000000,
+};
+byte xg[8]={
+  B00000000,
+  B00111100,
+  B00100000,
+  B00111000,
+  B00100000,
+  B00100000,
+  B00111100,
+  B00000000,
+};
+byte xh[8]={
+  B00000000,
+  B01111001,
+  B01000001,
+  B01110001,
+  B01000001,
+  B01000001,
+  B01111001,
+  B00000000,
+};
+byte xi[8]={
+  B00000000,
+  B11110011,
+  B10000010,
+  B11100010,
+  B10000010,
+  B10000010,
+  B11110010,
+  B00000000,
+};
+byte xj[8]={
+  B00000000,
+  B11100111,
+  B00000100,
+  B11000100,
+  B00000100,
+  B00000100,
+  B11100100,
+  B00000000,
+};
+byte xk[8]={
+  B00000000,
+  B11001111,
+  B00001001,
+  B10001001,
+  B00001001,
+  B00001001,
+  B11001001,
+  B00000000,
+};
+byte xl[8]={
+  B00000000,
+  B10011110,
+  B00010010,
+  B00010010,
+  B00010010,
+  B00010010,
+  B10010010,
+};
+  
+byte a[8]={
+B00111000,
+B00000111,
+B11100000,
+B00010000,
+B00010000,
+B00000000,
+B00010000,
+B00111000,};
+  byte r[8]={
+B00111000,
+B00000111,
+B11110000,
+B00010000,
+B00000000,
+B00000000,
+B00010000,
+B00111000,
+};
+  byte v[8]={
+B00111000,
+B00010111,
+B00010000,
+B11100000,
+B00000000,
+B00000000,
+B00010000,
+B00111000,
+};
+  byte u[8]={
+B00010111,
+B00111000,
+B00010000,
+B00010000,
+B11100000,
+B00000000,
+B00000100,
+B00001110,
+};
+  byte w[8]={
+B00000111,
+B00000000,
+B00000000,
+B00000100,
+B11100100,
+B00000000,
+B00000100,
+B00001110,};
+  byte ue[8]={
+B00000111,
+B00000000,
+B00000100,
+B00000100,
+B11100000,
+B00000000,
+B00000100,
+B00001110,
+};
+  byte o[8]={
+B00000111,
+B00000100,
+B00000100,
+B11100000,
+B00000000,
+B00000000,
+B00000100,
+B00001110,
+};
+  byte p[8]={
+B00000010,
+B00000111,
+B00000010,
+B11100010,
+B00000000,
+B00000000,
+B00010000,
+B00111000,
+};
+  byte q[8]={
+B00000000,
+B01110000,
+B00000000,
+B00100000,
+B00100000,
+B00000000,
+B00100000,
+B01110000,
+  };
+  byte s[8]={
+B00000000,
+B01110000,
+B00100000,
+B00100000,
+B00000000,
+B00000000,
+B00100000,
+B01110000,
+  };
+  byte t[8]={
+B00000000,
+B00100000,
+B01110000,
+B00100000,
+B00100000,
+B00000000,
+B00100000,
+B01110000,
+  };
+  lc.setRow(0,0,x[0]);
+  lc.setRow(0,1,x[1]);
+  lc.setRow(0,2,x[2]);
+  lc.setRow(0,3,x[3]);
+  lc.setRow(0,4,x[4]);
+  lc.setRow(0,5,x[5]);
+  lc.setRow(0,6,x[6]);
+  lc.setRow(0,7,x[7]);
+  delay(delaytime);
+    lc.setRow(0,0,y[0]);
+  lc.setRow(0,1,y[1]);
+  lc.setRow(0,2,y[2]);
+  lc.setRow(0,3,y[3]);
+  lc.setRow(0,4,y[4]);
+  lc.setRow(0,5,y[5]);
+  lc.setRow(0,6,y[6]);
+  lc.setRow(0,7,y[7]);
+  delay(delaytime);
+      lc.setRow(0,0,z[0]);
+  lc.setRow(0,1,z[1]);
+  lc.setRow(0,2,z[2]);
+  lc.setRow(0,3,z[3]);
+  lc.setRow(0,4,z[4]);
+  lc.setRow(0,5,z[5]);
+  lc.setRow(0,6,z[6]);
+  lc.setRow(0,7,z[7]);
+  delay(delaytime);
+  lc.setRow(0,0,b[0]);
+  lc.setRow(0,1,b[1]);
+  lc.setRow(0,2,b[2]);
+  lc.setRow(0,3,b[3]);
+  lc.setRow(0,4,b[4]);
+  lc.setRow(0,5,b[5]);
+  lc.setRow(0,6,b[6]);
+  lc.setRow(0,7,b[7]);
+  delay(delaytime);
+    lc.setRow(0,0,c[0]);
+  lc.setRow(0,1,c[1]);
+  lc.setRow(0,2,c[2]);
+  lc.setRow(0,3,c[3]);
+  lc.setRow(0,4,c[4]);
+  lc.setRow(0,5,c[5]);
+  lc.setRow(0,6,c[6]);
+  lc.setRow(0,7,c[7]);
+  delay(delaytime);
+  lc.setRow(0,0,d[0]);
+  lc.setRow(0,1,d[1]);
+  lc.setRow(0,2,d[2]);
+  lc.setRow(0,3,d[3]);
+  lc.setRow(0,4,d[4]);
+  lc.setRow(0,5,d[5]);
+  lc.setRow(0,6,d[6]);
+  lc.setRow(0,7,d[7]);
+  delay(delaytime);
+  lc.setRow(0,0,e[0]);
+  lc.setRow(0,1,e[1]);
+  lc.setRow(0,2,e[2]);
+  lc.setRow(0,3,e[3]);
+  lc.setRow(0,4,e[4]);
+  lc.setRow(0,5,e[5]);
+  lc.setRow(0,6,e[6]);
+  lc.setRow(0,7,e[7]);
+  delay(delaytime);
+  lc.setRow(0,0,f[0]);
+  lc.setRow(0,1,f[1]);
+  lc.setRow(0,2,f[2]);
+  lc.setRow(0,3,f[3]);
+  lc.setRow(0,4,f[4]);
+  lc.setRow(0,5,f[5]);
+  lc.setRow(0,6,f[6]);
+  lc.setRow(0,7,f[7]);
+  delay(delaytime);
+  lc.setRow(0,0,g[0]);
+  lc.setRow(0,1,g[1]);
+  lc.setRow(0,2,g[2]);
+  lc.setRow(0,3,g[3]);
+  lc.setRow(0,4,g[4]);
+  lc.setRow(0,5,g[5]);
+  lc.setRow(0,6,g[6]);
+  lc.setRow(0,7,g[7]);
+  delay(delaytime);
+  lc.setRow(0,0,h[0]);
+  lc.setRow(0,1,h[1]);
+  lc.setRow(0,2,h[2]);
+  lc.setRow(0,3,h[3]);
+  lc.setRow(0,4,h[4]);
+  lc.setRow(0,5,h[5]);
+  lc.setRow(0,6,h[6]);
+  lc.setRow(0,7,h[7]);
+  delay(delaytime);
+  lc.setRow(0,0,i[0]);
+  lc.setRow(0,1,i[1]);
+  lc.setRow(0,2,i[2]);
+  lc.setRow(0,3,i[3]);
+  lc.setRow(0,4,i[4]);
+  lc.setRow(0,5,i[5]);
+  lc.setRow(0,6,i[6]);
+  lc.setRow(0,7,i[7]);
+  delay(delaytime);
+  lc.setRow(0,0,j[0]);
+  lc.setRow(0,1,j[1]);
+  lc.setRow(0,2,j[2]);
+  lc.setRow(0,3,j[3]);
+  lc.setRow(0,4,j[4]);
+  lc.setRow(0,5,j[5]);
+  lc.setRow(0,6,j[6]);
+  lc.setRow(0,7,j[7]);
+  delay(delaytime);
+  lc.setRow(0,0,k[0]);
+  lc.setRow(0,1,k[1]);
+  lc.setRow(0,2,k[2]);
+  lc.setRow(0,3,k[3]);
+  lc.setRow(0,4,k[4]);
+  lc.setRow(0,5,k[5]);
+  lc.setRow(0,6,k[6]);
+  lc.setRow(0,7,k[7]);
+  delay(delaytime);
+  lc.setRow(0,0,l[0]);
+  lc.setRow(0,1,l[1]);
+  lc.setRow(0,2,l[2]);
+  lc.setRow(0,3,l[3]);
+  lc.setRow(0,4,l[4]);
+  lc.setRow(0,5,l[5]);
+  lc.setRow(0,6,l[6]);
+  lc.setRow(0,7,l[7]);
+  delay(delaytime);
+    lc.setRow(0,0,m[0]);
+  lc.setRow(0,1,m[1]);
+  lc.setRow(0,2,m[2]);
+  lc.setRow(0,3,m[3]);
+  lc.setRow(0,4,m[4]);
+  lc.setRow(0,5,m[5]);
+  lc.setRow(0,6,m[6]);
+  lc.setRow(0,7,m[7]);
+  delay(delaytime);
+  lc.setRow(0,0,n[0]);
+  lc.setRow(0,1,n[1]);
+  lc.setRow(0,2,n[2]);
+  lc.setRow(0,3,n[3]);
+  lc.setRow(0,4,n[4]);
+  lc.setRow(0,5,n[5]);
+  lc.setRow(0,6,n[6]);
+  lc.setRow(0,7,n[7]);
+  delay(delaytime);
+  lc.setRow(0,0,xa[0]);
+  lc.setRow(0,1,xa[1]);
+  lc.setRow(0,2,xa[2]);
+  lc.setRow(0,3,xa[3]);
+  lc.setRow(0,4,xa[4]);
+  lc.setRow(0,5,xa[5]);
+  lc.setRow(0,6,xa[6]);
+  lc.setRow(0,7,xa[7]);
+  delay(delaytime);
+  lc.setRow(0,0,xb[0]);
+  lc.setRow(0,1,xb[1]);
+  lc.setRow(0,2,xb[2]);
+  lc.setRow(0,3,xb[3]);
+  lc.setRow(0,4,xb[4]);
+  lc.setRow(0,5,xb[5]);
+  lc.setRow(0,6,xb[6]);
+  lc.setRow(0,7,xb[7]);
+  delay(delaytime);
+  lc.setRow(0,0,xc[0]);
+  lc.setRow(0,1,xc[1]);
+  lc.setRow(0,2,xc[2]);
+  lc.setRow(0,3,xc[3]);
+  lc.setRow(0,4,xc[4]);
+  lc.setRow(0,5,xc[5]);
+  lc.setRow(0,6,xc[6]);
+  lc.setRow(0,7,xc[7]);
+  delay(delaytime);
+  lc.setRow(0,0,xd[0]);
+  lc.setRow(0,1,xd[1]);
+  lc.setRow(0,2,xd[2]);
+  lc.setRow(0,3,xd[3]);
+  lc.setRow(0,4,xd[4]);
+  lc.setRow(0,5,xd[5]);
+  lc.setRow(0,6,xd[6]);
+  lc.setRow(0,7,xd[7]);
+  delay(delaytime);   
+  lc.setRow(0,0,xe[0]);
+  lc.setRow(0,1,xe[1]);
+  lc.setRow(0,2,xe[2]);
+  lc.setRow(0,3,xe[3]);
+  lc.setRow(0,4,xe[4]);
+  lc.setRow(0,5,xe[5]);
+  lc.setRow(0,6,xe[6]);
+  lc.setRow(0,7,xe[7]);
+  delay(delaytime);
+  lc.setRow(0,0,xf[0]);
+  lc.setRow(0,1,xf[1]);
+  lc.setRow(0,2,xf[2]);
+  lc.setRow(0,3,xf[3]);
+  lc.setRow(0,4,xf[4]);
+  lc.setRow(0,5,xf[5]);
+  lc.setRow(0,6,xf[6]);
+  lc.setRow(0,7,xf[7]);
+  delay(delaytime);
+  lc.setRow(0,0,xg[0]);
+  lc.setRow(0,1,xg[1]);
+  lc.setRow(0,2,xg[2]);
+  lc.setRow(0,3,xg[3]);
+  lc.setRow(0,4,xg[4]);
+  lc.setRow(0,5,xg[5]);
+  lc.setRow(0,6,xg[6]);
+  lc.setRow(0,7,xg[7]);
+  delay(delaytime);
+  lc.setRow(0,0,xh[0]);
+  lc.setRow(0,1,xh[1]);
+  lc.setRow(0,2,xh[2]);
+  lc.setRow(0,3,xh[3]);
+  lc.setRow(0,4,xh[4]);
+  lc.setRow(0,5,xh[5]);
+  lc.setRow(0,6,xh[6]);
+  lc.setRow(0,7,xh[7]);
+  delay(delaytime);
+}
+
+

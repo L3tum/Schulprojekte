@@ -1,0 +1,221 @@
+#include <LedControl.h>
+
+#include "LedControl.h"
+LedControl lc=LedControl(12,11,10,1);
+unsigned long delaytime=300;
+void setup() {
+  lc.shutdown(0,false);
+  lc.setIntensity(0,8);
+  lc.clearDisplay(0);
+}
+void loop() {
+  byte a[8]={
+B00111000,
+B00000111,
+B11100000,
+B00010000,
+B00010000,
+B00000000,
+B00010000,
+B00111000,};
+  byte r[8]={
+B00111000,
+B00000111,
+B11110000,
+B00010000,
+B00000000,
+B00000000,
+B00010000,
+B00111000,
+};
+  byte d[8]={
+B00111000,
+B00010111,
+B00010000,
+B11100000,
+B00000000,
+B00000000,
+B00010000,
+B00111000,
+};
+  byte u[8]={
+B00010111,
+B00111000,
+B00010000,
+B00010000,
+B11100000,
+B00000000,
+B00000100,
+B00001110,
+};
+  byte i[8]={
+B00000111,
+B00000000,
+B00000000,
+B00000100,
+B11100100,
+B00000000,
+B00000100,
+B00001110,};
+  byte n[8]={
+B00000111,
+B00000000,
+B00000100,
+B00000100,
+B11100000,
+B00000000,
+B00000100,
+B00001110,
+};
+  byte o[8]={
+B00000111,
+B00000100,
+B00000100,
+B11100000,
+B00000000,
+B00000000,
+B00000100,
+B00001110,
+};
+  byte p[8]={
+B00000010,
+B00000111,
+B00000010,
+B11100010,
+B00000000,
+B00000000,
+B00010000,
+B00111000,
+};
+  byte q[8]={
+B00000000,
+B01110000,
+B00000000,
+B00100000,
+B00100000,
+B00000000,
+B00100000,
+B01110000,
+  };
+  byte s[8]={
+B00000000,
+B01110000,
+B00100000,
+B00100000,
+B00000000,
+B00000000,
+B00100000,
+B01110000,
+  };
+  byte t[8]={
+B00000000,
+B00100000,
+B01110000,
+B00100000,
+B00100000,
+B00000000,
+B00100000,
+B01110000,
+  };
+  lc.setRow(0,0,a[0]);
+  lc.setRow(0,1,a[1]);
+  lc.setRow(0,2,a[2]);
+  lc.setRow(0,3,a[3]);
+  lc.setRow(0,4,a[4]);
+  lc.setRow(0,5,a[5]);
+  lc.setRow(0,6,a[6]);
+  lc.setRow(0,7,a[7]);
+  delay(delaytime);
+  lc.setRow(0,0,r[0]);
+  lc.setRow(0,1,r[1]);
+  lc.setRow(0,2,r[2]);
+  lc.setRow(0,3,r[3]);
+  lc.setRow(0,4,r[4]);
+  lc.setRow(0,5,r[5]);
+  lc.setRow(0,6,r[6]);
+  lc.setRow(0,7,r[7]);
+  delay(delaytime);
+  lc.setRow(0,0,d[0]);
+  lc.setRow(0,1,d[1]);
+  lc.setRow(0,2,d[2]);
+  lc.setRow(0,3,d[3]);
+  lc.setRow(0,4,d[4]);
+  lc.setRow(0,5,d[5]);
+  lc.setRow(0,6,d[6]);
+  lc.setRow(0,7,d[7]);
+  delay(delaytime);
+  lc.setRow(0,0,u[0]);
+  lc.setRow(0,1,u[1]);
+  lc.setRow(0,2,u[2]);
+  lc.setRow(0,3,u[3]);
+  lc.setRow(0,4,u[4]);
+  lc.setRow(0,5,u[5]);
+  lc.setRow(0,6,u[6]);
+  lc.setRow(0,7,u[7]);
+  delay(delaytime);
+  lc.setRow(0,0,i[0]);
+  lc.setRow(0,1,i[1]);
+  lc.setRow(0,2,i[2]);
+  lc.setRow(0,3,i[3]);
+  lc.setRow(0,4,i[4]);
+  lc.setRow(0,5,i[5]);
+  lc.setRow(0,6,i[6]);
+  lc.setRow(0,7,i[7]);
+  delay(delaytime);
+  lc.setRow(0,0,n[0]);
+  lc.setRow(0,1,n[1]);
+  lc.setRow(0,2,n[2]);
+  lc.setRow(0,3,n[3]);
+  lc.setRow(0,4,n[4]);
+  lc.setRow(0,5,n[5]);
+  lc.setRow(0,6,n[6]);
+  lc.setRow(0,7,n[7]);
+  delay(delaytime);
+  lc.setRow(0,0,o[0]);
+  lc.setRow(0,1,o[1]);
+  lc.setRow(0,2,o[2]);
+  lc.setRow(0,3,o[3]);
+  lc.setRow(0,4,o[4]);
+  lc.setRow(0,5,o[5]);
+  lc.setRow(0,6,o[6]);
+  lc.setRow(0,7,o[7]);
+  delay(delaytime);
+  lc.setRow(0,0,p[0]);
+  lc.setRow(0,1,p[1]);
+  lc.setRow(0,2,p[2]);
+  lc.setRow(0,3,p[3]);
+  lc.setRow(0,4,p[4]);
+  lc.setRow(0,5,p[5]);
+  lc.setRow(0,6,p[6]);
+  lc.setRow(0,7,p[7]);
+  delay(delaytime);
+  lc.setRow(0,0,q[0]);
+  lc.setRow(0,1,q[1]);
+  lc.setRow(0,2,q[2]);
+  lc.setRow(0,3,q[3]);
+  lc.setRow(0,4,q[4]);
+  lc.setRow(0,5,q[5]);
+  lc.setRow(0,6,q[6]);
+  lc.setRow(0,7,q[7]);
+  delay(delaytime);
+  lc.setRow(0,0,s[0]);
+  lc.setRow(0,1,s[1]);
+  lc.setRow(0,2,s[2]);
+  lc.setRow(0,3,s[3]);
+  lc.setRow(0,4,s[4]);
+  lc.setRow(0,5,s[5]);
+  lc.setRow(0,6,s[6]);
+  lc.setRow(0,7,s[7]);
+  delay(delaytime);
+  lc.setRow(0,0,t[0]);
+  lc.setRow(0,1,t[1]);
+  lc.setRow(0,2,t[2]);
+  lc.setRow(0,3,t[3]);
+  lc.setRow(0,4,t[4]);
+  lc.setRow(0,5,t[5]);
+  lc.setRow(0,6,t[6]);
+  lc.setRow(0,7,t[7]);
+  delay(delaytime);
+}
+
+

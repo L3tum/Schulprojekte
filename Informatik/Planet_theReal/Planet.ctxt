@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Planet()
+comment1.params=
+comment1.target=int\ gesteinSpawnZahl()
+comment10.params=
+comment10.target=void\ prepare()
+comment10.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
+comment2.params=
+comment2.target=int\ huegelSpawnZahl()
+comment3.params=
+comment3.target=int\ kitSpawnZahl()
+comment4.params=
+comment4.target=int\ mineSpawnZahl()
+comment5.params=
+comment5.target=int\ gesteinCo()
+comment6.params=
+comment6.target=boolean\ spawnMines()
+comment7.params=g
+comment7.target=void\ setF(boolean)
+comment8.params=
+comment8.target=int\ getXP()
+comment9.params=
+comment9.target=int\ getYP()
+numComments=11

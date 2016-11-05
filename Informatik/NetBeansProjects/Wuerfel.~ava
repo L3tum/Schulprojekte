@@ -1,0 +1,13 @@
+public class Wuerfel{
+    private int zahl;
+    public Wuerfel(){
+        this.zahl = (int) (Math.random() * 6) +1;
+    }
+    public void wuerfeln(){
+        this.zahl = (int) (Math.random() * 6) +1;
+    }
+    
+    public int getZahl(){
+        return this.zahl;
+    }
+}

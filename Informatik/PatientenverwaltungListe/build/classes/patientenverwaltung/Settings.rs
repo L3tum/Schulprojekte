@@ -1,0 +1,2 @@
+patientenverwaltung.PortableSettings
+patientenverwaltung.Settings

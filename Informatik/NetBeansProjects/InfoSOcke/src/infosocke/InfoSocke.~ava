@@ -1,0 +1,12 @@
+package infosocke;
+
+/**
+ *
+ * @author Letum
+ */
+public class InfoSocke {
+    public static void main(String[] args) {
+        Socke socke = new Socke("Blutrot", 47, "Baumwolle", "Tennissocken fuer Sandalen");
+        
+    }
+}

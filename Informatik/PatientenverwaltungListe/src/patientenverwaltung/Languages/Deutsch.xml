@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language>
+    <patientHinzufügen>Patient hinzufügen</patientHinzufügen>
+    <patientAktualisieren>Patient aktualisieren</patientAktualisieren>
+    <felderLeeren>Felder leeren</felderLeeren>
+    <vorwärts>Vorwärts</vorwärts>
+    <rückwärts>Rückwärts</rückwärts>
+    <allergieHinzufügen>Allergie hinzufügen</allergieHinzufügen>
+    <vorname>Vorname</vorname>
+    <name>Name</name>
+    <blutgruppe>Blutgruppe</blutgruppe>
+    <hausnummer>Hausnummer</hausnummer>
+    <straße>Straße</straße>
+    <notfallnummer>Notfallnummer</notfallnummer>
+    <ort>Ort</ort>
+    <rufnummer>Rufnummer</rufnummer>
+    <postleitzahl>Postleitzahl</postleitzahl>
+    <languagesButtonText>Sprache</languagesButtonText>
+    <deutschButtonText>Deutsch</deutschButtonText>
+    <englishButtonText>Englisch</englishButtonText>
+    <settingsButtonText>Einstellungen</settingsButtonText>
+    <playMusicButton>Musik abspielen</playMusicButton>
+    <endingAnimationButtonText>Animation abspielen</endingAnimationButtonText>
+    <autoUpdateButtonText>Auto-Update Patient</autoUpdateButtonText>
+    <showExploButtonText>Zeige Explosion</showExploButtonText>
+</language>
